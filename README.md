@@ -5,6 +5,7 @@ tinyJqueryPlugin
 基于jQuery.1.8.3.js
 支持chrome firefox ie8 [需要开启ie render]
 
+this project use utf-8 to character-sets
 
 项目说明
   lib  是目录下为jQuery和插件
