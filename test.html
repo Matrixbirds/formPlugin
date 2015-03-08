@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>demo to form plugin</title>
+    <style>
+        #result {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+        }
+    </style>
+    <script type="text/javascript" src="./lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./lib/formPlugin.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#submit").on('click', function() {
+                $("#id").jsonSubmit({
+                    domains: ['tbl', 'tbl2']
+                })
+            });
+        })
+    </script>
+</head>
+<body>
+    <form action="demo" method="post" id="id">
+        <table id="tbl">
+            <tr>
+                <th>username</th>
+                <td><input type="text" name="username" value="<%= username%>" /></td>
+            </tr>
+            <tr>
+                <th>password</th>
+                <td><input type="text" name="password" value="<%= passwd%>"/></td>
+            </tr>
+            <tr>
+                <th>age</th>
+                <td>
+                    <input type="text" name="age" value="<%= age%>"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" id="submit" value="提交"/></td>
+            </tr>
+        </table>
+        <div id="tbl2">
+            <input type="text" name="form" /><br/>
+            <input type="radio" name="fox" /><br/>
+            <select name="select">
+                <option value="1">key</option>
+                <option value="0">val</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
