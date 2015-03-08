@@ -22,7 +22,7 @@ You must make sure your web page is using uft-8 encoding.
 [How to Use]
 	step 1. reference all denpendencies
 
-    ```html
+    ```js
 	<script type="text/javascript" src="./lib/json2.js"></script>
     <script type="text/javascript" src="./lib/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="./lib/formPlugin.js"></script>
@@ -47,7 +47,7 @@ You must make sure your web page is using uft-8 encoding.
     ```
 
     step 3. use plugins module in javascript
-    
+
     ```html
     <script type="text/javascript">
         $(function() {
