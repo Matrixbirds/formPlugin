@@ -12,14 +12,14 @@ You must make sure your web page is using uft-8 encoding.<br/>
 需要utf-8编码环境的页面才能正常使用<br/>
 
 
-[Details]<br/>
+### [Details]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lib: formplugin and dependencies<br/>
-[Running Demo]<br/>
+### [Running Demo]<br/>
 ```bash
 	$ npm install
 	$ node app.js
 ```
-[How to Use]<br/>
+### [How to Use]<br/>
 step 1. reference all denpendencies
 ```js
 	<script type="text/javascript" src="./lib/json2.js"></script>
