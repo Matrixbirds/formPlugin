@@ -21,10 +21,13 @@ You must make sure your web page is using uft-8 encoding.
 
 [How to Use]
 	step 1. reference all denpendencies
+    ```html
 	<script type="text/javascript" src="./lib/json2.js"></script>
     <script type="text/javascript" src="./lib/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="./lib/formPlugin.js"></script>
+    ```
     step 2. write html code as below
+    ```html
     <!-- recommand use post to send form data -->
     <form action="demo" method="post" id="id">
         <table id="tbl">
@@ -38,7 +41,9 @@ You must make sure your web page is using uft-8 encoding.
         </div>
         <input type="submit" id="submit" value="提交"/>
     </form>
+    ```
     step 3. use plugins module in javascript
+    ```html
     <script type="text/javascript">
         $(function() {
             $("#submit").on('click', function() {
@@ -48,3 +53,4 @@ You must make sure your web page is using uft-8 encoding.
             });
         })
     </script>
+    ```
