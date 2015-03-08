@@ -1,36 +1,38 @@
 formPlugin based on jQuery and json2.
 ====================================
 
-### Simple form submit plugin based on jQuery 1.8.x && json2.js
-### Support Firefox, Chrome, IE 8 && high version of IE
-### This plugin build under utf-8 encoding environment
-### You must make sure your web page is using uft-8 encoding.
+Simple form submit plugin based on jQuery 1.8.x && json2.js
+Support Firefox, Chrome, IE 8 && high version of IE
+This plugin build under utf-8 encoding environment
+You must make sure your web page is using uft-8 encoding.
 
-### 基于jQuery 1.8.x && json2.js 的表单提交插件
-### 支持chrome firefox ie8及以上版本
-### 插件在utf-8编码环境下构建
-### 需要utf-8编码环境的页面才能正常使用
+基于jQuery 1.8.x && json2.js 的表单提交插件
+支持chrome firefox ie8及以上版本
+插件在utf-8编码环境下构建
+需要utf-8编码环境的页面才能正常使用
 
 
-## [Details]
+[Details]
 	lib: formplugin and dependencies
 
-## [Running Demo]
+[Running Demo]
+```bash
 	$ npm install
 	$ node app.js
+```
 
-## [How to Use]
+[How to Use]
 	step 1. reference all denpendencies
 
-    ```js
+```js
 	<script type="text/javascript" src="./lib/json2.js"></script>
     <script type="text/javascript" src="./lib/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="./lib/formPlugin.js"></script>
-    ```
+```
 
     step 2. write html code as below
 
-    ```html
+```html
     <!-- recommand use post to send form data -->
     <form action="demo" method="post" id="id">
         <table id="tbl">
@@ -44,11 +46,11 @@ formPlugin based on jQuery and json2.
         </div>
         <input type="submit" id="submit" value="提交"/>
     </form>
-    ```
+```
 
     step 3. use plugins module in javascript
 
-    ```html
+```html
     <script type="text/javascript">
         $(function() {
             $("#submit").on('click', function() {
@@ -58,4 +60,4 @@ formPlugin based on jQuery and json2.
             });
         })
     </script>
-    ```
+```
