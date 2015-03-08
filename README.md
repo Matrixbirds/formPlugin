@@ -1,17 +1,50 @@
-tinyJqueryPlugin
+formPlugin based on jQuery and json2.
 ================
 
-这是一个jQuery插件的轮子库
-基于jQuery.1.8.3.js
-支持chrome firefox ie8 [需要开启ie render]
+Simple form submit plugin based on jQuery 1.8.x && json2.js
+Support Firefox, Chrome, IE 8 && high version of IE
+This plugin build under utf-8 encoding environment
+You must make sure your web page is using uft-8 encoding.
 
-this project use utf-8 to character-sets
+基于jQuery 1.8.x && json2.js 的表单提交插件
+支持chrome firefox ie8及以上版本
+插件在utf-8编码环境下构建
+需要utf-8编码环境的页面才能正常使用
 
-项目说明
-  lib  是目录下为jQuery和插件
-  test 是demo目录
 
-插件列表
-  表单json格式submit[v0.0.1] -- 根据form内的标签id提交json格式的数据 后台只需要get id就能获取改id下面的所有字段值
-  表单自动填充[仍处于开发中]
-  
+[Details]
+	lib: formplugin and dependencies
+
+[Running Demo]
+	$ npm install
+	$ node app.js
+
+[How to Use]
+	step 1. reference all denpendencies
+	<script type="text/javascript" src="./lib/json2.js"></script>
+    <script type="text/javascript" src="./lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./lib/formPlugin.js"></script>
+    step 2. write html code as below
+    <!-- recommand use post to send form data -->
+    <form action="demo" method="post" id="id">
+        <table id="tbl">
+            <tr>
+                <th>username</th>
+                <td><input type="text" name="username" value="<%= username%>" /></td>
+            </tr>
+        </table>
+        <div id="tbl2">
+            <input type="text" name="form" /><br/>
+        </div>
+        <input type="submit" id="submit" value="提交"/>
+    </form>
+    step 3. use plugins module in javascript
+    <script type="text/javascript">
+        $(function() {
+            $("#submit").on('click', function() {
+                $("#id").jsonSubmit({
+                    domains: ['tbl', 'tbl2']
+                })
+            });
+        })
+    </script>
