@@ -13,7 +13,7 @@ You must make sure your web page is using uft-8 encoding.<br/>
 
 
 [Details]<br/>
-	lib: formplugin and dependencies<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lib: formplugin and dependencies<br/>
 [Running Demo]<br/>
 ```bash
 	$ npm install
