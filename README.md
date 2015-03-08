@@ -12,14 +12,14 @@ You must make sure your web page is using uft-8 encoding.
 需要utf-8编码环境的页面才能正常使用
 
 
-[Details]
+## [Details]
 	lib: formplugin and dependencies
 
-[Running Demo]
+## [Running Demo]
 	$ npm install
 	$ node app.js
 
-[How to Use]
+## [How to Use]
 	step 1. reference all denpendencies
 
     ```js
